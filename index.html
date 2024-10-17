@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/6458c3cafe.js" crossorigin="anonymous"></script>
 <style>
     *{
         font-family: "Open Sans", sans-serif;
@@ -19,67 +20,37 @@
 </head>
 <body>
     <header>
-        <nav class="h-14 bg-[#FFF2BC] flex items-center justify-between px-5">
+        <nav class="shadow3 h-14 bg-white flex items-center justify-between px-5 ">
             <div  class="flex items-center justify-center gap-2.5">
                 <a href="#"><img class="h-17 w-20" src="images/ShopBuzz__1_-removebg-preview.png"></a>
                 <a href="#" class=""> <h1 class="text-3xl font-semibold text-gray-800">Shop<span class="text-red-600">B</span>u<span class="text-red-600">zz</span></h1></a>
             </div>
             <div>
                 <ul class="flex items-center -ml-28 text-lg">
-                    <li class="hover:bg-[#FFEEA7] h-14 px-3 flex items-center text-[#442A00] hover:cursor-pointer">Home</li>
-                    <li class="hover:bg-[#FFEEA7] h-14 px-3 flex items-center text-[#442A00] hover:cursor-pointer">Order</li>
-                    <li class="hover:bg-[#FFEEA7] h-14 px-3 flex items-center text-[#442A00] hover:cursor-pointer">Favourites</li>
-                    <li class="hover:bg-[#FFEEA7] h-14 px-3 flex items-center text-[#442A00] hover:cursor-pointer">Contact</li>
-                    <li class="hover:bg-[#FFEEA7] h-14 px-3 flex items-center text-[#442A00] hover:cursor-pointer">About us</li>
+                    <li class="hover:bg-red-600h-14 px-3 flex items-center text-white hover:cursor-pointer">Home</li>
+                    <li class="hover:bg-red-600 hover:text-white h-14 px-3 flex items-center text-[#442A00] hover:cursor-pointer">Order</li>
+                    <li class="hover:bg-red-600 hover:text-white h-14 px-3 flex items-center text-[#442A00] hover:cursor-pointer">Favourites</li>
+                    <li class="hover:bg-red-600 hover:text-white h-14 px-3 flex items-center text-[#442A00] hover:cursor-pointer">Contact</li>
+                    <li class="hover:bg-red-600 hover:text-white h-14 px-3 flex items-center text-[#442A00] hover:cursor-pointer">About us</li>
                 </ul>
             </div>
             <div>
-                <button class="shadow1 bg-white px-4 py-1 text-[#442A00] rounded-lg text-lg mr-2 border-2 border-[#442A00] hover:bg-[#FFEEA7]">Sign-Up</button>
-                <button class="shadow2 bg-white px-4 py-1 text-[#442A00] rounded-lg text-lg mr-2 border-2 border-[#442A00] hover:bg-[#FFEEA7]">Login</button>
+                <button class="shadow1 bg-white px-4 py-1 text-[#442A00] rounded-lg text-lg mr-2 border-2 border-[#442A00] hover:bg-red-600">Sign-Up</button>
+                <button class="shadow2 bg-white px-4 py-1 text-[#442A00] rounded-lg text-lg mr-2 border-2 border-[#442A00] hover:bg-red-600">Login</button>
             </div>
             <div class="dropdown">
-  <button class="dropbtn">🌐</button>
+  <button class="dropbtn"><i class="fa-solid fa-language"></i></button>
   <div class="dropdown-content">
     <a href="#">English</a>
     <a href="#">Bangla</a>
   </div>
 </div>
         </nav>
-        <div class="carousel w-full h-96">
-            <div id="slide1" class="carousel-item relative w-full">
-              <img
-                src="images/burger-4165634_1280.jpg"
-                class="w-full object-cover" />
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide4" class="btn btn-circle">❮</a>
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div>
-            <div id="slide2" class="carousel-item relative w-full">
-              <img
-                src="images/burger-4226039_1280.jpg"
-                class="w-full object-cover" />
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide1" class="btn btn-circle">❮</a>
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div>
-            <div id="slide3" class="carousel-item relative w-full">
-              <img
-                src="images/burger-4683373_1280.jpg"
-                class="w-full object-cover" />
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide2" class="btn btn-circle">❮</a>
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div>
-            <div id="slide4" class="carousel-item relative w-full">
-              <img
-                src="images/burger-5145112_1280.jpg"
-                class="w-full object-cover" />
-              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide3" class="btn btn-circle">❮</a>
-                <a href="#slide1" class="btn btn-circle">❯</a>
+        <div>
+          <h1 style="color: red;font-weight: 900;font-size: 60px;">Welcome to ShopBuzz</h1>
+        </div>
+        <div>
+        <img src="images/Screenshot_2024-10-17_110117-removebg-preview.png"><img src="images/Screenshot_2024-10-17_114653-removebg-preview.png" alt="">
               </div>
             </div>
           </div>
